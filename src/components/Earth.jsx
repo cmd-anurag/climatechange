@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import earthtexture from '../assets/earth.jpeg'
 
 function Earth() {
   const mountRef = useRef(null);
@@ -24,7 +25,7 @@ function Earth() {
     scene.add(nightlight);
 
     const textureLoader = new THREE.TextureLoader();
-    const texture = textureLoader.load("src/components/earth.jpeg");
+    const texture = textureLoader.load(earthtexture);
 
     const SphereGeometry = new THREE.SphereGeometry(1.5, 64, 64);
     const SphereMaterial = new THREE.MeshPhysicalMaterial({ map: texture });
