@@ -1,11 +1,17 @@
 import React from "react";
-import Earth from "./components/Earth";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
+import ClimateChange from "./components/ClimateChange";
 
 const App = () => {
   return (
     <>
-      <Home />
+    <BrowserRouter>
+    <Routes>
+      <Route exact path="/" element={<Home />}></Route>
+      <Route exact path="/cc" element={<ClimateChange />}></Route>
+    </Routes>
+    </BrowserRouter>
     </>
   );
 };

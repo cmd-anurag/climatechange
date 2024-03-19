@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Earth from "./Earth";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 

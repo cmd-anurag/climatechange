@@ -30,7 +30,7 @@ canvas {
   height: 100%;
   z-index: -1;
   min-height: 100vh;
-  pointer-events: auto;
+  /* pointer-events: auto; */
 }
 
 .mainheader1 {
@@ -44,6 +44,10 @@ canvas {
   font-weight: 1000;
   font-size: 110px;
   color: #0077b6;
+}
+
+a {
+  pointer-events: auto;
 }
 
 @keyframes fadeInUp {

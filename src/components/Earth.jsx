@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import earthtexture from '../assets/earth.jpeg'
+import { Link } from "react-router-dom";
 
 function Earth(props) {
 
@@ -10,6 +11,7 @@ function Earth(props) {
   const isLerping = useRef(true);
   const exitRef = useRef(exit);
   const zoomedOutRef = useRef(false);
+  const ccRef = useRef();
 
   let animate1, animate2;
   const width = window.innerWidth, height = window.innerHeight;
@@ -40,8 +42,7 @@ function Earth(props) {
   sphere.position.set(0, 0, 0);
 
   const gridHelper = new THREE.GridHelper(50, 100);
-  const renderer = new THREE.WebGLRenderer();
-  
+  let renderer = new THREE.WebGLRenderer({ antialias: true });
 
   // creating orbit controls
   const controls = new OrbitControls(camera, renderer.domElement);
@@ -54,7 +55,7 @@ function Earth(props) {
 
     //  Some helper objects
     
-    scene.add(gridHelper);
+    // scene.add(gridHelper);
     // const plhelper = new THREE.PointLightHelper(light);
     // scene.add(plhelper); 
 
@@ -84,7 +85,6 @@ function Earth(props) {
 
     // cleanup function
     return () => {
-      mountRef.current.removeChild(renderer.domElement);
       cancelAnimationFrame(animate1)
      }
   }, []);
@@ -93,8 +93,8 @@ function Earth(props) {
     exitRef.current = exit;
 
     function zoomOut() {
-      let targetPosition = new THREE.Vector3(-45, 0, 40); // Define the target position to zoom out
-      camera.position.lerp(targetPosition, 0.009);
+      let targetPosition = new THREE.Vector3(-45, 5, 40); // Define the target position to zoom out
+      camera.position.lerp(targetPosition, 0.05);
       if (camera.position.distanceTo(targetPosition) < 1) {
         exitRef.current = false;
         zoomedOutRef.current = true;
@@ -102,7 +102,9 @@ function Earth(props) {
     }
 
     const animate = function (time) {
-      animate2 = requestAnimationFrame(animate);
+      if(!zoomedOutRef.current) {
+        animate2 = requestAnimationFrame(animate);
+      }
 
       if(exitRef.current) {
         zoomOut();
@@ -110,7 +112,7 @@ function Earth(props) {
       }
 
       if(zoomedOutRef.current) {
-        scene.remove(sphere);
+        if(ccRef.current) {ccRef.current.click()}
       }
 
       renderer.render(scene, camera);
@@ -121,7 +123,9 @@ function Earth(props) {
   }, [exit])
   
 
-  return <div ref={mountRef} />;
+  return <><div ref={mountRef} />
+  <Link ref={ccRef} to='/cc'>CLick this button</Link>
+  </>;
 }
 
 export default Earth;
