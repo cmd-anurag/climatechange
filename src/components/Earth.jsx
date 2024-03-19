@@ -124,7 +124,7 @@ function Earth(props) {
   
 
   return <><div ref={mountRef} />
-  <Link ref={ccRef} to='/cc'>CLick this button</Link>
+  <Link ref={ccRef} to='/cc'></Link>
   </>;
 }
 
