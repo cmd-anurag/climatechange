@@ -33,12 +33,9 @@ canvas {
   pointer-events: auto;
 }
 
-h1 {
-  margin: 5px;
-}
 .mainheader1 {
   text-shadow: 6px 6px 1px #0a3908;
-  color: #397c06;
+  color: #21a50d;
   font-weight: 1000;
   font-size: 120px;
 }

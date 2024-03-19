@@ -1,18 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Earth from "./Earth";
 
 const Home = () => {
 
-  // const [loaded, setLoaded] = useState(false);
-
-  // useEffect(()=> {
-  //   const timer = setTimeout(() => {
-  //     setLoaded(true);
-  //   }, 3400);
-  //   return () => {
-  //     clearTimeout(timer)
-  //   }
-  // }, []);
+  const [exit, setExit] = useState(false);
 
 
   return (
@@ -22,7 +13,7 @@ const Home = () => {
           <div className="col-12 col-md-8 d-flex flex-column align-items-start">
             <h1 className="mainheader1">Climate</h1>
             <h1 className="mainheader2">Change</h1>
-            <button type="button" class="btn btn-primary btn-lg mx-5 my-4">
+            <button onClick={()=>{setExit(true)}} type="button" class="btn btn-primary btn-lg mx-5 my-4">
               Know More
             </button>
           </div>
@@ -32,7 +23,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Earth />
+      <Earth exit={{exit, setExit}} />
     </div>
   );
 };
