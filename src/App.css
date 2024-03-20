@@ -1,0 +1,50 @@
+.climatechange-header {
+    min-height: 100vh;
+  }
+
+  .stackedbg {
+    background: url('./assets/blob-scene-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+  }
+
+  h1 {
+    position: relative;
+    padding: 20px;
+    font-weight: 100;
+    font-size: 60px;
+  }
+
+  @keyframes turnred {
+    0% {
+        color: #FAFAFA;
+    }
+    25% {
+        
+        color: #F6CDCD 
+    }
+    50% {
+        color: #F29F9F;
+    }
+    75% {
+        color: #EE7272;
+    }
+    100% {
+        opacity: 1;
+        color: red;
+    }
+  }
+
+  #climate {
+    
+    color: rgb(184, 255, 184);
+    font-family: "Slackey", system-ui;
+  }
+
+  #change {
+    animation: turnred 1s ease-in forwards;
+    font-weight: 1000;
+    font-family: "Underdog", system-ui;
+    animation-delay: 1s;
+  }

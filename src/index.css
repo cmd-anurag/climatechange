@@ -30,7 +30,6 @@ canvas {
   height: 100%;
   z-index: -1;
   min-height: 100vh;
-  /* pointer-events: auto; */
 }
 
 .mainheader1 {
@@ -53,12 +52,26 @@ a {
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: scale(0.1);
+    transform: translateY(100px);
   }
   100% {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(10px);
   }
+}
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
+.container.my-4.exit {
+  animation: fadeOutDown 0.5s ease-out forwards;
 }
 
 .container.my-4 {

@@ -61,6 +61,7 @@ function Earth(props) {
 
     // creating the renderer
     renderer.setSize(width, height);
+    renderer.setClearColor(0x141414, 1);
     mountRef.current.appendChild(renderer.domElement);
 
     // zoom-in animation
@@ -72,7 +73,7 @@ function Earth(props) {
       animate1 = requestAnimationFrame(animate);
     
       if (isLerping.current) {
-        camera.position.lerp(target, 0.025);
+        camera.position.lerp(target, 0.05);
         if (camera.position.distanceTo(target) < 0.01) {
           isLerping.current = false;
         }
@@ -107,12 +108,16 @@ function Earth(props) {
       }
 
       if(exitRef.current) {
+        document.querySelector('.container.my-4').classList.add('exit');
         zoomOut();
         controls.update();
       }
-
+      
       if(zoomedOutRef.current) {
-        if(ccRef.current) {ccRef.current.click()}
+        if(ccRef.current) {
+          
+          ccRef.current.click();
+        }
       }
 
       renderer.render(scene, camera);
