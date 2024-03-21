@@ -13,7 +13,7 @@ const Home = () => {
           <div className="col-12 col-md-8 d-flex flex-column align-items-start">
             <h1 className="mainheader1">Climate</h1>
             <h1 className="mainheader2">Change</h1>
-            <button onClick={()=>{setExit(true)}} type="button" class="btn btn-primary btn-lg mx-5 my-4">
+            <button onClick={()=>{setExit(true)}} type="button" class="btn btn-primary btn-lg mx-2 my-4">
               Know More
             </button>
           </div>

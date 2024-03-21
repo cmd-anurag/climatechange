@@ -61,7 +61,6 @@ function Earth(props) {
 
     // creating the renderer
     renderer.setSize(width, height);
-    renderer.setClearColor(0x141414, 1);
     mountRef.current.appendChild(renderer.domElement);
 
     // zoom-in animation

@@ -9,13 +9,6 @@
     background-position:center;
   }
 
-  h1 {
-    position: relative;
-    padding: 20px;
-    font-weight: 100;
-    font-size: 60px;
-  }
-
   @keyframes turnred {
     0% {
         color: #FAFAFA;
@@ -37,7 +30,6 @@
   }
 
   #climate {
-    
     color: rgb(184, 255, 184);
     font-family: "Slackey", system-ui;
   }

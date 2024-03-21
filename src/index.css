@@ -11,17 +11,32 @@ body {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 .container button {
+  border: none !important;
+  background: #2C3E50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   pointer-events: all;
-  height: 80px;
-  width: 120px;
-  font-size: 20px;
+  min-width: 130px;
+  max-width: 170px;
+  min-height: 40px;
+  max-height: 80px;
+  height: 9vh;
+  width: 10vw;
+  font-size: clamp(12px, 5vw, 20px);
 }
 
 .description {
   padding: 15px;
   word-wrap: break-word;
   flex-direction: column;
+  font-size: clamp(15px, 3vw, 17px);
 }
+.row {
+  margin: 0;
+  /* overflow-x: hidden; */
+}
+
 canvas {
   position: fixed;
   top: 0;
@@ -33,16 +48,32 @@ canvas {
 }
 
 .mainheader1 {
-  text-shadow: 6px 6px 1px #0a3908;
-  color: #21a50d;
+  background: hsla(97, 56%, 42%, 1);
+
+  background: linear-gradient(90deg, hsla(97, 56%, 42%, 1) 0%, hsla(92, 55%, 62%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(97, 56%, 42%, 1) 0%, hsla(92, 55%, 62%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(97, 56%, 42%, 1) 0%, hsla(92, 55%, 62%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5DA92F", endColorstr="#9BD46A", GradientType=1 );
+  color: transparent;
+  background-clip: text;
   font-weight: 1000;
-  font-size: 120px;
+  font-size: clamp(70px, 8vw, 100px);
 }
 .mainheader2 {
-  text-shadow: 6px 6px 1px #0e1f5a;
+  background: hsla(41, 100%, 70%, 1);
+
+background: linear-gradient(0deg, hsla(41, 100%, 70%, 1) 0%, hsla(7, 76%, 47%, 1) 100%);
+
+background: -moz-linear-gradient(0deg, hsla(41, 100%, 70%, 1) 0%, hsla(7, 76%, 47%, 1) 100%);
+
+background: -webkit-linear-gradient(0deg, hsla(41, 100%, 70%, 1) 0%, hsla(7, 76%, 47%, 1) 100%);
   font-weight: 1000;
-  font-size: 110px;
-  color: #0077b6;
+  font-size: clamp(60px, 8vw, 100px);
+  color: transparent;
+  background-clip: text;
 }
 
 a {
@@ -75,6 +106,7 @@ a {
 }
 
 .container.my-4 {
+  padding: 0;
   opacity: 0;
   animation: fadeInUp 0.5s ease-out forwards;
   animation-delay: 1.5s;
