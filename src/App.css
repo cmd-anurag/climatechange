@@ -1,44 +1,66 @@
-.climatechange-header {
+
+  .stackedbg {
+    background: url('./assets/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    
+  }
+
+  .wavebg {
+    background: url('./assets/wave-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
   }
 
-  .stackedbg {
-    background: url('./assets/bg.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  @keyframes turnred {
-    0% {
-        color: #FAFAFA;
-    }
-    25% {
-        
-        color: #F6CDCD 
-    }
-    50% {
-        color: #F29F9F;
-    }
-    75% {
-        color: #EE7272;
-    }
-    100% {
-        opacity: 1;
-        color: red;
-    }
+  .climatechange-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   #climate {
-    font-size: 50px;
-    color: rgb(184, 255, 184);
+    font-weight: 100;
+    font-size: clamp(55px, 5vw, 90px);
+    color: #006500;
     font-family: "Slackey", system-ui;
   }
-
   #change {
-    font-size: 50px;
-    animation: turnred 1s ease-in forwards;
-    font-weight: 1000;
-    font-family: "Underdog", system-ui;
-    animation-delay: 1s;
+    color: #c60000;
+    font-size: clamp(55px, 5vw, 90px);
+    font-weight: 500;
+    font-family: "Mitr", system-ui;
   }
+
+.quote {
+  font-size: clamp(20px, 2vw, 40px);
+}
+
+.introduction {
+  margin-top: 90px !important;
+}
+.introduction h3 {
+  font-weight: 800;
+}
+.introduction p {
+  color: #352020;
+}
+
+.card {
+  padding: 0;
+  background-color: #dbffe2;
+  margin: 20px 0px;
+}
+
+.card-title {
+  font-weight: 1000;
+}
+.card img {
+  aspect-ratio: 16/10;
+}
+.card-text {
+  color: rgb(48, 48, 48)
+}
+

@@ -13,13 +13,13 @@ const Home = () => {
           <div className="col-12 col-md-8 d-flex flex-column align-items-start">
             <h1 className="mainheader1">Climate</h1>
             <h1 className="mainheader2">Change</h1>
-            <button onClick={()=>{setExit(true)}} type="button" class="btn btn-primary btn-lg mx-2 my-4">
+            <button onClick={()=>{setExit(true)}} type="button" class="btn btn-success btn-lg mx-2 my-4">
               Know More
             </button>
           </div>
-          <div className="col-12 col-md-4 d-flex justify-content-center description my-4">
-              <h2>What is Climate Change?</h2>
-              <p>Climate change refers to long-term shifts in temperatures and weather patterns. Such shifts can be natural, due to changes in the sun’s activity or large volcanic eruptions. But since the 1800s, human activities have been the main driver of climate change, primarily due to the burning of fossil fuels like coal, oil and gas.</p>
+          <div className="col-12 col-md-4 d-flex justify-content-end description my-4">
+              <h2>THE EARTH</h2>
+              <p className="my-3">Earth stands alone as the only known planet capable of sustaining life, a delicate oasis in the vastness of space where ecosystems and biodiversity thrives. However, our actions are casting a shadow over this unique haven. Human activities, particularly the burning of fossil fuels and deforestation, are altering the Earth's climate at an unprecedented rate, leading to a phenomenon known as climate change</p>
           </div>
         </div>
       </div>
