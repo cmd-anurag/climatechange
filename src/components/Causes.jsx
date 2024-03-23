@@ -8,7 +8,7 @@ const Causes = () => {
   return (
     <div className="row d-flex justify-content-around">
 
-      <div data-aos="fade-left" className="card card1 col-12 col-md-4" style={{width: '18rem'}}>
+      <div data-aos="flip-left" className="card card1 col-12 col-md-4" style={{width: '18rem'}}>
         <img src="https://qph.cf2.quoracdn.net/main-qimg-c629b844cb06646223f8e2fdaf6a7895" className="card-img-top" alt="..." />
         <div className="card-body">
         <h5 className="card-title">Greenhouse Emissions</h5>
@@ -17,7 +17,7 @@ const Causes = () => {
         </div>
       </div>
 
-      <div data-aos="fade-down" className="card card2 col-12 col-md-4" style={{width: '18rem'}}>
+      <div data-aos="zoom-out" className="card card2 col-12 col-md-4" style={{width: '18rem'}}>
         <img src="https://files.worldwildlife.org/wwfcmsprod/images/Deforestation_in_Tesso_Nilo_Sumatra/story_full_width/1e7g2a63k2_deforestation_causes_HI_104236.jpg" className="card-img-top" alt="..." />
         <div className="card-body">
         <h5 className="card-title">Deforestation</h5>
@@ -27,7 +27,7 @@ const Causes = () => {
         </div>
       </div>
 
-      <div data-aos="fade-right" className="card card3 col-12 col-md-4" style={{width: '18rem'}}>
+      <div data-aos="flip-right" className="card card3 col-12 col-md-4" style={{width: '18rem'}}>
         <img src="https://miro.medium.com/v2/resize:fit:1024/1*hGEoEv4Bjsd8cgxUQ6fDJg.jpeg" className="card-img-top" alt="..." />
         <div className="card-body">
         <h5 className="card-title">Industrial Processes</h5>

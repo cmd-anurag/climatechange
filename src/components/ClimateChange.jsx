@@ -4,6 +4,7 @@ import Causes from './Causes'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import Introduction from './Introduction';
+import { TypeAnimation } from 'react-type-animation';
 
 
 const ClimateChange = () => {
@@ -12,8 +13,33 @@ const ClimateChange = () => {
     <>
     <div className='stackedbg'>
       <div className='container'>
-      <div data-aos="zoom-out" data-aos-anchor-placement="top-center" className='climatechange-header container'>
-        <h1><span id='climate'>CLIMATE </span><br /><span className='mx-5' id='change'>CHANGE</span></h1>
+      <div className='climatechange-header container'>
+
+      <TypeAnimation
+      sequence={[
+        'Climate Change?', 
+        1000, 
+        'Droughts?', 
+        2000, 
+        'Sea Level Rise?', 
+        3000, 
+        'Ocean Acidification?',
+        4000,
+        'Food Shortages?',
+        4000,
+        'Health Crisis?',
+        4000,
+        'Conflict?',
+        4000,
+        'Extinction.',
+        5000
+      ]}
+      wrapper="span"
+      cursor={true}
+      repeat={Infinity}
+      style={{ fontSize: 'clamp(50px, 5vw, 100px)', display: 'inline-block', color: 'darkred'}}
+      id='climate'
+    />
         <p className='quote'>
       <i className="fa-solid fa-quote-left fa-lg"></i>
       &nbsp;&nbsp;Inaction today may paint<br /> a future we can't undo.&nbsp;&nbsp;

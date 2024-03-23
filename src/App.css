@@ -1,51 +1,42 @@
 
   .stackedbg {
-    background: url('./assets/bg1.jpg');
+    background: url('./assets/bg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-    
+    backdrop-filter: blur(10px);
   }
 
   .wavebg {
-    background: url('./assets/wave-haikei.svg');
+    background: url('./assets/blob-scene-haikei.svg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
   }
 
   .climatechange-header {
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
-  }
-
-  #climate {
-    font-weight: 100;
-    font-size: clamp(55px, 5vw, 90px);
-    color: #006500;
-    font-family: "Slackey", system-ui;
-  }
-  #change {
-    color: #c60000;
-    font-size: clamp(55px, 5vw, 90px);
-    font-weight: 500;
-    font-family: "Mitr", system-ui;
+    flex-direction: column;
   }
 
 .quote {
+  margin-left: auto;
   font-size: clamp(20px, 2vw, 40px);
 }
 
 .introduction {
-  margin-top: 90px !important;
+  max-width: 70%;
 }
-.introduction h3 {
+.introduction h1 {
+  color: rgb(33, 61, 43);
   font-weight: 800;
 }
 .introduction p {
-  color: #352020;
+  font-size: 20px;
+  color: #ffffff;
 }
 
 .card {
