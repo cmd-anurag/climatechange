@@ -3,6 +3,7 @@ import '../App.css'
 import Causes from './Causes'
 import Introduction from './Introduction';
 import { TypeAnimation } from 'react-type-animation';
+import GlobalTemperature from './GlobalTemperature';
 
 
 const ClimateChange = () => {
@@ -51,6 +52,7 @@ const ClimateChange = () => {
       <div className="container">
         <h3 style={{fontWeight: '1000', color: 'white'}}>What is causing Climate Change?</h3>
         <Causes />
+        <GlobalTemperature />
       </div>
     </div>
     </>

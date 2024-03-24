@@ -37,9 +37,8 @@ const Causes = () => {
           </p>
         </div>
       </div>
-      
     </div>
-      <a href="https://en.wikipedia.org/wiki/Causes_of_climate_change" style={{marginLeft: 'auto', width: 'fit-content'}}>and many other human driven activities</a>
+    <div className="d-flex justify-content-end"><a href="https://en.wikipedia.org/wiki/Causes_of_climate_change" style={{marginLeft: 'auto'}}>and many other human driven activities</a></div>
     </>
   );
 };

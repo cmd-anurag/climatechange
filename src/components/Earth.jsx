@@ -62,6 +62,7 @@ function Earth(props) {
     // creating the renderer
     renderer.setSize(width, height);
     mountRef.current.appendChild(renderer.domElement);
+    renderer.domElement.className = 'earthcanvas';
 
     // zoom-in animation
     const target = new THREE.Vector3(2, 0, 2);

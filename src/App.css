@@ -26,7 +26,7 @@
 .quote {
   margin-left: auto;
   font-size: clamp(20px, 2.5vw, 40px);
-  text-shadow: 0px 0px 1px black;
+  
 }
 
 .introduction {
@@ -38,6 +38,7 @@
   text-shadow: 0px 0px 10px black;
 }
 .introduction p {
+  text-shadow: 0px 0px 2px black;
   font-size: 20px;
   color: #eeeded;
 }
@@ -58,3 +59,7 @@
   color: rgb(48, 48, 48)
 }
 
+/* #datacanvas { */
+  /* width: 50%; */
+  /* height: 50%; */
+/* } */
