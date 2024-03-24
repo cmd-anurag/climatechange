@@ -50,6 +50,18 @@ const GlobalTemperature = () => {
             y: {
               beginAtZero: false,
             },
+          },
+          plugins: {
+            title: {
+              display: true,
+              text: 'Annual Global Temperature (in Celsius)',
+              font: {
+                size: 24
+              }
+            },
+            legend: {
+              display: false
+            }
           }
         },
       });

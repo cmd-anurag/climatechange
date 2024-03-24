@@ -56,10 +56,5 @@
   aspect-ratio: 16/10;
 }
 .card-text {
-  color: rgb(48, 48, 48)
+  color: #303030;
 }
-
-/* #datacanvas { */
-  /* width: 50%; */
-  /* height: 50%; */
-/* } */
