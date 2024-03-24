@@ -1,14 +1,15 @@
 
   .stackedbg {
-    background: url('./assets/bg2.jpg');
+    background: url('./assets/bg1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
     backdrop-filter: blur(10px);
+    background-position: center;
   }
 
   .wavebg {
-    background: url('./assets/blob-scene-haikei.svg');
+    background: url('./assets/layered-waves-haikei.svg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -24,19 +25,21 @@
 
 .quote {
   margin-left: auto;
-  font-size: clamp(20px, 2vw, 40px);
+  font-size: clamp(20px, 2.5vw, 40px);
+  text-shadow: 0px 0px 1px black;
 }
 
 .introduction {
   max-width: 70%;
 }
 .introduction h1 {
-  color: rgb(33, 61, 43);
+  color: #dffbcd;
   font-weight: 800;
+  text-shadow: 0px 0px 10px black;
 }
 .introduction p {
   font-size: 20px;
-  color: #ffffff;
+  color: #eeeded;
 }
 
 .card {

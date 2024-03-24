@@ -1,14 +1,11 @@
 import React from 'react'
 import '../App.css'
 import Causes from './Causes'
-import AOS from 'aos';
-import 'aos/dist/aos.css'
 import Introduction from './Introduction';
 import { TypeAnimation } from 'react-type-animation';
 
 
 const ClimateChange = () => {
-  AOS.init({duration: 1000});
   return (
     <>
     <div className='stackedbg'>
@@ -37,7 +34,7 @@ const ClimateChange = () => {
       wrapper="span"
       cursor={true}
       repeat={Infinity}
-      style={{ fontSize: 'clamp(50px, 5vw, 100px)', display: 'inline-block', color: 'darkred'}}
+      style={{ fontSize: 'clamp(50px, 5vw, 100px)', display: 'inline-block', color: 'red', textShadow: '0px 0px 2px black', fontWeight: '600'}}
       id='climate'
     />
         <p className='quote'>

@@ -4,8 +4,9 @@ import 'aos/dist/aos.css';
 
 
 const Causes = () => {
-  Aos.init();
+  Aos.init({duration: 1000});
   return (
+    <>
     <div className="row d-flex justify-content-around">
 
       <div data-aos="flip-left" className="card card1 col-12 col-md-4" style={{width: '18rem'}}>
@@ -38,6 +39,8 @@ const Causes = () => {
       </div>
       
     </div>
+      <a href="https://en.wikipedia.org/wiki/Causes_of_climate_change" style={{marginLeft: 'auto', width: 'fit-content'}}>and many other human driven activities</a>
+    </>
   );
 };
 
