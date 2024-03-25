@@ -17,7 +17,7 @@ const CarbonEmissions = () => {
                 data: {
                     labels: ['China', 'United States', 'India', 'European Union', 'Russia', 'Japan', 'Brazil', 'Iran', 'Indonesia','Mexico'],
                     datasets: [{
-                        label: 'Carbon Emissions (in million tonnes)',
+                        label: 'Carbon Emissions (in million Tonnes)',
                         data: [14, 6, 3.5, 3.4, 2, 1.17, 1.14, 1.13, 1.106, 0.8],
                         borderWidth: 1,
                         backgroundColor: [
@@ -59,7 +59,7 @@ const CarbonEmissions = () => {
                     plugins: {
                         title: {
                             display: true,
-                            text: 'Largest Carbon Emitting Countries (in million Tonnes)',
+                            text: 'Top Carbon Emitting Countries (in million Tonnes)',
                             font: {
                                 size: 25
                             }
@@ -81,7 +81,7 @@ const CarbonEmissions = () => {
     },[])
 
   return (
-    <div>
+    <div className='d-flex justify-content-center py-4' style={{height: '700px', width: 'auto'}}>
       <canvas ref={chartRef} />
     </div>
   )

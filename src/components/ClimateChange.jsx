@@ -52,6 +52,11 @@ const ClimateChange = () => {
       <div className="container">
         <h3 style={{fontWeight: '1000', color: 'white'}}>What is causing Climate Change?</h3>
         <Causes />
+      </div>
+    </div>
+
+    <div className='blurbg'>
+      <div className="container">
         <Visualisations />
       </div>
     </div>

@@ -34,9 +34,9 @@ const GlobalTemperature = () => {
                 13.28
               ],
               fill: false,
-              backgroundColor: "rgb(255, 000, 000)",
-              borderColor: "rgb(200, 000, 000)",
-              tension: 0.1,
+              backgroundColor: "rgb(100, 10, 000)",
+              borderColor: "rgb(255, 000, 000)",
+              tension: 0.3,
             },
           ],
         },
@@ -47,7 +47,15 @@ const GlobalTemperature = () => {
             intersect: false
           },
           scales: {
+            x: {
+              grid: {
+                display: false
+              },
+            },
             y: {
+              grid: {
+                display: false
+              },
               beginAtZero: false,
             },
           },
@@ -77,7 +85,7 @@ const GlobalTemperature = () => {
   }, []); // Add any dependencies here if necessary
 
   return (
-    <div id="datacanvas">
+    <div className='d-flex justify-content-center py-4' style={{height: '700px', width: 'auto'}} id="datacanvas">
       <canvas ref={chartRef} />
     </div>
   );

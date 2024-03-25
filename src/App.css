@@ -12,6 +12,12 @@
     background: url('./assets/layered-waves-haikei.svg');
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .blurbg {
+    background: url('./assets/stacked-waves-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
   }
 
