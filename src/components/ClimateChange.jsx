@@ -4,6 +4,7 @@ import Causes from './Causes'
 import Introduction from './Introduction';
 import { TypeAnimation } from 'react-type-animation';
 import Visualisations from './Visualisations';
+import Solutions from './Solutions';
 
 
 const ClimateChange = () => {
@@ -50,7 +51,7 @@ const ClimateChange = () => {
     
     <div className='wavebg'>
       <div className="container">
-        <h3 style={{fontWeight: '1000', color: 'white'}}>What is causing Climate Change?</h3>
+        <h2 style={{fontWeight: '1000', color: 'white'}}>What is causing Climate Change?</h2>
         <Causes />
       </div>
     </div>
@@ -58,6 +59,13 @@ const ClimateChange = () => {
     <div className='blurbg'>
       <div className="container">
         <Visualisations />
+      </div>
+    </div>
+
+    <div className='solutionbg'>
+      <div className="container">
+        <h1 className='py-5' style={{fontWeight: '600'}}>What can we do?</h1>
+        <Solutions />
       </div>
     </div>
     </>

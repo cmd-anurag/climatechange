@@ -38,7 +38,7 @@ const EnergyConsumption = () => {
                   }]
                 },
                 options: {
-                    
+                  maintainAspectRatio: false,
                     responsive: true,
                     scales: {
                         x: {
@@ -77,8 +77,8 @@ const EnergyConsumption = () => {
           };
     },[])
   return (
-    <div className='d-flex justify-content-center py-4' style={{height: '700px', width: 'auto'}}>
-      <canvas ref={chartRef}  />
+    <div className='d-flex justify-content-center py-4'>
+      <canvas height='600' ref={chartRef}  />
     </div>
   );
 };

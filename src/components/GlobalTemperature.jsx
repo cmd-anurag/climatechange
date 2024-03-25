@@ -85,7 +85,7 @@ const GlobalTemperature = () => {
   }, []); // Add any dependencies here if necessary
 
   return (
-    <div className='d-flex justify-content-center py-4' style={{height: '700px', width: 'auto'}} id="datacanvas">
+    <div className='d-flex justify-content-center py-4'>
       <canvas ref={chartRef} />
     </div>
   );

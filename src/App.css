@@ -18,9 +18,14 @@
     background: url('./assets/stacked-waves-haikei.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
   }
 
+  .solutionbg {
+    background: url('./assets/wave-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
   .climatechange-header {
     padding: 30px;
     display: flex;
@@ -63,4 +68,28 @@
 }
 .card-text {
   color: #303030;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.carousel img {
+  position: relative;
+  z-index: 0;
+}
+
+.carousel-caption {
+  z-index: 2;
 }

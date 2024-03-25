@@ -41,9 +41,9 @@ const Causes = () => {
       <div data-aos="flip-right" className="card card3 col-12 col-md-4" style={{width: '18rem'}}>
         <img src="https://cordis.europa.eu/docs/news/images/2022-05/436389.jpg" className="card-img-top" alt="..." />
         <div className="card-body">
-        <h5 className="card-title">Urbanization and Lifestyle</h5>
+        <h5 className="card-title">Urbanization and Lifestyle</h5> <hr />
           <p className="card-text">
-          Urbanization and lifestyle contribute to climate change through increased energy consumption and consumer habits. Sustainable planning and eco-friendly choices are key to reducing these impacts.</p>
+          Urbanization and lifestyle contribute to climate change through increased energy consumption and consumer habits. Sustainable planning is the key to reducing these impacts.</p>
         </div>
       </div>
 
