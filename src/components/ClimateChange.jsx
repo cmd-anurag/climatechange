@@ -5,11 +5,15 @@ import Introduction from './Introduction';
 import { TypeAnimation } from 'react-type-animation';
 import Visualisations from './Visualisations';
 import Solutions from './Solutions';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 const ClimateChange = () => {
+  Aos.init({duration: 800});
   return (
     <>
+        
     <div className='stackedbg'>
       <div className='container'>
       <div className='climatechange-header container'>
@@ -36,7 +40,7 @@ const ClimateChange = () => {
       wrapper="span"
       cursor={true}
       repeat={Infinity}
-      style={{ fontSize: 'clamp(50px, 5vw, 100px)', display: 'inline-block', color: 'red', textShadow: '0px 0px 2px black', fontWeight: '600'}}
+      style={{ fontSize: 'clamp(50px, 5vw, 100px)', display: 'inline-block', color: 'red', fontWeight: '600'}}
       id='climate'
     />
         <p className='quote'>
@@ -51,7 +55,7 @@ const ClimateChange = () => {
     
     <div className='wavebg'>
       <div className="container">
-        <h2 style={{fontWeight: '1000', color: 'white'}}>What is causing Climate Change?</h2>
+        <h2 data-aos="fade-up" style={{fontWeight: '1000', color: 'white'}}>What is causing Climate Change?</h2>
         <Causes />
       </div>
     </div>
@@ -64,7 +68,7 @@ const ClimateChange = () => {
 
     <div className='solutionbg'>
       <div className="container">
-        <h1 className='py-5' style={{fontWeight: '600'}}>What can we do?</h1>
+        <h1 data-aos='fade-up' className='py-5' style={{fontWeight: '600'}}>What can we do?</h1>
         <Solutions />
       </div>
     </div>
