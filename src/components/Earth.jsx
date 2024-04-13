@@ -94,7 +94,7 @@ function Earth(props) {
     exitRef.current = exit;
 
     function zoomOut() {
-      let targetPosition = new THREE.Vector3(45, 5, -40); // Define the target position to zoom out
+      let targetPosition = new THREE.Vector3(1, 0, -1); // Define the target position to zoom out
       camera.position.lerp(targetPosition, 0.03);
       if (camera.position.distanceTo(targetPosition) < 1) {
         exitRef.current = false;

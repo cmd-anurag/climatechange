@@ -9,11 +9,6 @@ body {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 .container button {
-  border: none !important;
-  background: #009717;  /* fallback for old browsers */
-  /* background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  Chrome 10-25, Safari 5.1-6 */
-  /* background: linear-gradient(to right, #4CA1AF, #2C3E50); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
   pointer-events: all;
   min-width: 130px;
   max-width: 170px;

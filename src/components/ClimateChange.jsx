@@ -20,19 +20,19 @@ const ClimateChange = () => {
 
       <TypeAnimation
       sequence={[
-        'Climate Change?', 
+        'Climate Change', 
         1000, 
-        'Droughts?', 
+        'Droughts', 
         2000, 
-        'Sea Level Rise?', 
+        'Sea Level Rise', 
         3000, 
-        'Ocean Acidification?',
+        'Global Warming',
         4000,
-        'Food Shortages?',
+        'Food Shortages',
         4000,
-        'Health Crisis?',
+        'Health Crisis',
         4000,
-        'Conflict?',
+        'Conflict',
         4000,
         'Extinction.',
         5000
@@ -40,7 +40,7 @@ const ClimateChange = () => {
       wrapper="span"
       cursor={true}
       repeat={Infinity}
-      style={{ fontSize: 'clamp(50px, 5vw, 100px)', display: 'inline-block', color: 'red', fontWeight: '600'}}
+      style={{ fontSize: 'clamp(50px, 5vw, 100px)', display: 'inline-block', color: 'red', fontWeight: '600', textShadow: '3px 3px 2px black'}}
       id='climate'
     />
         <p className='quote'>
