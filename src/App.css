@@ -27,6 +27,16 @@
     background-size: cover;
     min-height: 100vh;
   }
+
+  .footprintbg {
+    background: url('./assets/footprintbg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 900px;
+    background-attachment: fixed;
+  }
+
+
   .climatechange-header {
     padding: 30px;
     display: flex;
