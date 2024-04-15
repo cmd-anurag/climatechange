@@ -110,3 +110,11 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+.gradient-text {
+  background: linear-gradient(90deg, #5bba01, #eaeaeb);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 40px;
+}

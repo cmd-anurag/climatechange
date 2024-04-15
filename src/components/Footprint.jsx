@@ -8,7 +8,6 @@ const Footprint = () => {
             
             const carEmissionPerKm = 0.25; 
             const busEmissionPerKm = 0.149; 
-            const trainEmissionPerKm = 0.036; 
             const planeEmissionPerKm = 0.195; 
             const electricityEmissionPerKwh = 0.475; 
             const gasEmissionPerKwh = 0.2; 
@@ -53,16 +52,16 @@ const Footprint = () => {
             const totalEmission = carEmission + busEmission + planeEmission +
                                   electricityEmission + gasEmission + wasteEmission + dietEmission;
         
-            alert("Your carbon footprint is approximately " + totalEmission.toFixed(2) + " kg CO2 equivalent per day.");
+            document.getElementById('resultfootprint').innerText = "Your carbon footprint is approximately " + totalEmission.toFixed(2) + " kg CO2 equivalent per week.";
         }
 return (
     <div className='footprintbg'>
             <div style={{maxWidth: '50%'}} className='container'>
-            <h1 style={{color: 'white', textAlign: 'center', fontWeight: '1000'}} className='py-3'>Carbon Footprint Calculator</h1> <br />
+            <h1 style={{textAlign: 'center', fontWeight: '1000'}} className='py-3 gradient-text'>Carbon Footprint Calculator</h1> <br />
             <form id="carbonFootprintForm">
                     <div class="form-floating mb-3">
                     <input type="number" class="form-control" id="carKm" placeholder=" " min="0"/>
-                    <label for="carMiles">Miles driven by car per day</label>
+                    <label for="carMiles">Kilometers driven by car per day</label>
                     </div>
 
                     <div class="form-floating mb-3">
@@ -82,7 +81,7 @@ return (
 
                     <div class="form-floating mb-3">
                     <input type="number" class="form-control" id="planeKm" placeholder=" " min="0"/>
-                    <label for="planeMiles">Miles traveled by plane per year</label>
+                    <label for="planeMiles">Kilometers traveled by plane per week</label>
                     </div>
 
                     <div class="form-floating mb-3">
@@ -92,12 +91,12 @@ return (
 
                     <div class="form-floating mb-3">
                     <input type="number" class="form-control" id="gasKwh" placeholder=" " min="0"/>
-                    <label for="gasTherms">Natural gas consumption in therms per month</label>
+                    <label for="gasTherms">Natural gas consumption in kWh per month</label>
                     </div>
 
                     <div class="form-floating mb-3">
                     <input type="number" class="form-control" id="wasteKg" placeholder=" " min="0"/>
-                    <label for="wasteProduction">Waste production in pounds per day</label>
+                    <label for="wasteProduction">Waste production in kilograms per day</label>
                     </div>
 
                     <div class="form-floating mb-3">
@@ -109,7 +108,23 @@ return (
                     <label for="dietChoice">Your diet type</label>
                     </div>
 
-<button style={{fontSize: '15px'}} type="button" onClick={calculateFootprint} class="btn btn-success">Calculate Carbon Footprint</button>
+                    <div class="modal fade" id="resultmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Carbon Footprint Result</h1>
+                    </div>
+                    <div id='resultfootprint' class="modal-body">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button style={{height: '25px'}} type="button" class="btn btn-success btn-sm" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <button data-bs-toggle="modal" data-bs-target="#resultmodal" style={{fontSize: '15px'}} type="button" onClick={calculateFootprint} class="btn btn-success">Calculate Carbon Footprint</button>
 
             </form>
             </div>
