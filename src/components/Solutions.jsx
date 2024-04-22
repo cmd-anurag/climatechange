@@ -34,7 +34,6 @@ const Solutions = () => {
             <div className="carousel-caption d-md-block">
                 <h5>Reduce your Carbon Footprint</h5>
                 <p>By minimizing the amount of greenhouse gases we emit into the atmosphere, we can help slow the rate of global warming and protect the health of our planet.</p>
-                <Link to='/calculateCarbonFootprint' style={{fontSize: '15px'}} className='btn btn-outline-light'>Calculate your Footprint!</Link>
             </div>
             </div>
         </div>

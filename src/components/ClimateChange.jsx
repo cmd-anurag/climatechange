@@ -7,6 +7,7 @@ import Visualisations from './Visualisations';
 import Solutions from './Solutions';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 
 
 const ClimateChange = () => {
@@ -44,9 +45,13 @@ const ClimateChange = () => {
       id='climate'
     />
         <p className='quote'>
+        <div className='d-flex flex-column align-items-center'>
+          <div>
       <i className="fa-solid fa-quote-left fa-lg"></i>
       &nbsp;&nbsp;Inaction today may paint<br /> a future we can't undo.&nbsp;&nbsp;
-      <i className="fa-solid fa-quote-right fa-lg"></i>
+      <i className="fa-solid fa-quote-right fa-lg"></i><br /></div>
+      <Link to='/calculateCarbonFootprint' style={{fontSize: '19px', maxWidth: '50%'}} className='my-3 btn btn-outline-light'>Calculate your Footprint!</Link>
+    </div>
       </p>
       </div>
       <Introduction />
